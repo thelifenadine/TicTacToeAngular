@@ -1,5 +1,5 @@
 {
-  "name": "simple-brunch",
+  "name": "tictactoeangular",
   "version": "0.1.0",
   "private": true,
   "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
