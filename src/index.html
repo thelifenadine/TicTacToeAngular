@@ -3,14 +3,79 @@
 <head>
   <meta charset="utf-8">
   <title>Tic Tac Toe build with AngularJS</title>
-  <link rel="stylesheet" href="app.css">
+  <style>
+    .ng-cloak {
+      display: none;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 5px 0;
+      color: #333;
+      width: 100%;
+    }
+
+    .gameinfo {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .board {
+      float: left;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .square {
+      background-color: #333;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-size: 30px;
+      font-weight: bold;
+      height: 30px;
+      line-height: 30px;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      width: 30px;
+    }
+
+    .square.floatme {
+      clear: both;
+    }
+
+    button {
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 2px solid #333;
+      padding: 5px;
+      margin: 5px 0;
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    input {
+      width: 30px;
+    }
+
+    .won {
+      color: #f00;
+    }
+  </style>
 </head>
 <body>
   <h1>
     AngularJS
     <small>• Tic Tac Toe</small>
   </h1>
-
   <div ng-app="ticTacToeApp" class="ng-cloak" ng-cloak="">
     <div ng-controller="gameController as ctrl">
      <h2>Tic Tac Toe</h2>
@@ -34,9 +99,5 @@
       </div>
     </div>
   </div>
-
-  <script src="libraries.js"></script>
-  <script src="app.js"></script>
-  <script>require('application').init();</script>
 </body>
 </html>
