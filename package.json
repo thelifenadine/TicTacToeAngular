@@ -4,10 +4,7 @@
   "description": "angular and babel and webpack!!!!",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "server": "node ./src/server",
-    "build": "webpack --mode production",
-    "test": "mocha ./test/**/*.js --require babel-register --reporter spec || exit 0"
+    "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [],
   "author": "",
@@ -15,20 +12,14 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "mocha": "^5.1.1",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.1.2",
-    "webpack-dev-server": "^3.1.4"
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
   },
   "dependencies": {
-    "angular": "^1.7.4",
-    "axios": "^0.18.0",
-    "express": "^4.16.3",
-    "lodash": "^4.17.10"
+    "angular": "^1.8.2",
+    "lodash": "^4.17.20"
   }
 }
