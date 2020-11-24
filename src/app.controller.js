@@ -100,6 +100,7 @@ class gameController {
   };
 }
 
-gameController.$inject = ['$scope', 'gameDataService'];
+// can do this instead of in the constructor
+// gameController.$inject = ['$scope', 'gameDataService'];
 
 export default gameController;
